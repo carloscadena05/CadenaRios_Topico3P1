@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinámica</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+    <script type="text/javascript" src="wordfind.js"></script> 
+    <script type="text/javascript" src="wordfindgame.js"></script> 
+</head>
+<body  style="background-color: #ffffe2;">
+    <style>
+    @font-face { font-family: LatoLi; src: url('./assets/lemon_friday/Lato-Light.ttf'); }
+    </style>    
+    <ul style="list-style-type: none; margin: 0; padding: 0; overflow: hidden; width: 1146px; height: 70px;	display: inline-block; position:fixed; top: 0; padding-left: 27%; background-color: white;">
+        <li class="lili"><a href="./index.html">MENÚ PRINCIPAL</a></li>
+        <li class="lili"><a href="./informacion.html">INFORMACIÓN</a></li>
+        <li class="lili"><a href="./galeria.html">GALERÍA</a></li>
+        <li class="lili"><a class="active" href="./dinamica.html">DINÁMICA</a></li>
+        <li class="lili"><a href="./cuestionario.html">TEST</a></li>
+        <li class="lili"><a href="./sobremi.html">ACERCA DE MÍ</a></li>
+    </ul><br><br>
+    <div class="contenedor" align=center>
+        <div class="titulo" style="background-image: url(./assets/dinamica.png); height: 600px; width: 1300px; background-position: center center; background-repeat: no-repeat; background-attachment: fixed">
+        </div><br>
+        <div>
+            <h1 style="font-family: LatoLi;">Sopa de letras</h1>
+            <table>
+                <tr>
+                    <td>
+                        <div id='juego'></div>                  
+                    </td>
+                    <td>
+                        <div id='Palabras'></div>
+                        <script>
+                            var words = ['orden','proactividad','mejora','solidaridad','vision','empatia'];
+                            var gamePuzzle = wordfindgame.create(words, '#juego', '#Palabras');                             
+                            var puzzle = wordfind.newPuzzle(words,{height: 18, width:18, fillBlanks: false});
+                            wordfind.print(puzzle);      
+                        </script>
+                    </td>
+                </tr>
+            </table>          
+            <br>           
+        </div>
+        <div style="text-align: center; padding-bottom: 50px;">
+            <a class="boton" style="vertical-align: 90%; " href="./cuestionario.html">TEST</a>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+    
+    
+    

@@ -1,0 +1,118 @@
+@font-face { font-family: LatoLi; src: url('../assets/lemon_friday/Lato-Light.ttf'); }
+h1 {
+	font-family: "LatoLi";
+	font-size: 24px;
+	margin: 5px;
+	color: #000;
+	text-shadow: #5104a5;
+}
+
+h2 {
+	font-size: 1.3em;
+	font-family: "LatoLi";
+	font-size: 20px;
+	margin: 5px;
+	color: #000;
+}
+
+h3 {
+	opacity: 1;
+	margin: 0;
+	font-family: "LatoLi";
+	text-align: left;
+	margin-left: 20px;
+	margin-top: 20px;
+	color: #000;
+}
+
+h4 {
+	opacity: 1;
+	margin: 0;
+	font-family: "LatoLi";
+	margin-right: 20px;
+	color: #000;
+}
+
+.contenedor {
+	background-color: rgba(255,255,255,0.7);
+	padding: 50px 0;
+	text-align: center;
+	width: 800px;
+	height: fit-content;
+	margin-top: 5vh;
+	padding-top: 0px;
+    margin-left: 80px;
+}
+
+.boton {
+	background-color: rgba(255,255,255,0);
+	border-radius: 10px;
+	border: #000 3px solid;
+	box-shadow: 0 0px 20px rgba(255,255,255,1), 0 0px 6px rgba(0,0,0,0.1);
+	color: #000;
+	font-size: 24px;
+	padding: 10px 30px;
+	font-family: "LatoLi";
+    text-decoration:none;
+}
+
+.boton:active {
+	transform: scale(0.98);
+}
+
+.boton:focus {
+	outline: 0;
+}
+
+.boton:hover{
+	background-color: #000;
+	color: #fff;
+	cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	width: 1146px;
+    height: 70px;
+	display: inline-block;
+	position:fixed;
+    top: 0;
+	padding-left: 27%;
+	background-color: white;
+}
+
+li {
+    display: inline-block;
+	
+}
+
+li a {
+    font-family: "LatoLi";
+    display: block;
+    color: black;
+    line-height: 37.5px;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: #000;
+    border-bottom: 4px solid #000;
+}
+
+.active {
+    color: #000;
+    border-bottom: 4px solid #000;
+}
+
+.galeria{
+	object-fit: cover;
+}
+.galeria:hover{
+	background-color: rgba(255,255,255,0.25);
+	cursor: pointer;
+}

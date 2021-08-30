@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Galería</title>
+	<link rel="stylesheet" href="./css/design.css">
+</head>
+
+<body style="background-color: #deffff;">
+    <ul>
+        <li><a href="./index.html">MENÚ PRINCIPAL</a></li>
+        <li><a href="./informacion.html">INFORMACIÓN</a></li>
+        <li><a class="active" href="./galeria.html">GALERÍA</a></li>
+        <li><a href="./dinamica.html">DINÁMICA</a></li>
+        <li><a href="./cuestionario.html">TEST</a></li>
+        <li><a href="./sobremi.html">ACERCA DE MÍ</a></li>
+    </ul><br><br>
+    <div class="contenedor" style="background-color: #deffff;">
+		<div class="titulo" style="background-image: url(./assets/galeria.png); height: 600px; width: 1300px; background-position: center center; background-repeat: no-repeat; background-attachment: fixed">
+    </div><br>
+    <div style="background-color: #deffff;">
+        <br><br>
+        <table style="text-align: center;">
+            <tr style="padding: 15px;">
+                <td style="padding: 15px;">
+                    <img class="galeria" src="./assets/Infografias/infografiaCovey.png" onclick="img(this.src)" id="covey" alt="" style="width: 250px; height: 250px;">
+                    <h4>Los 7 hábitos de la gente altamente efectiva. Stephen Covey.</h4>
+                </td>
+                <td style="padding: 15px;">
+                    <img class="galeria" src="./assets/Infografias/infografíaManila.png" onclick="img(this.src)" id="manila" alt="" style="width: 250px; height: 250px;"> 
+                    <h4>Decálogo de Octavio Manila.</h4>  
+                </td>
+                <td style="padding: 15px;">
+                    <img class="galeria" src="./assets/Infografias/infografíaKenji.png" onclick="img(this.src)" id="kenji" alt="" style="width: 250px; height: 250px;">
+                    <h4>Decálogo de Yokoi Kenji.</h4>  
+                </td>
+                <td style="padding: 15px;">
+                    <img class="galeria" src="./assets/Infografias/infografíaKasuga.png" onclick="img(this.src)" id="kasuga" alt="" style="width: 250px; height: 250px;">
+                    <h4>Decálogo de Carlos Kasuga.</h4>
+                </td>
+                <td style="padding: 15px;">
+                    <img class="galeria" src="./assets/Infografias/quéNecesito.png" onclick="img(this.src)" id="necesito" alt="" style="width: 250px; height: 250px;"> 
+                    <h4>¿Qué necesito?</h4>  
+                </td>
+            </tr>
+            <tr style="padding: 15px;">
+                <td></td>
+                <td style="padding: 15px;">
+                    <img class="galeria" src="./assets/Infografias/gigantesMéxico.png" onclick="img(this.src)" id="gigantes" alt="" style="width: 250px; height: 250px;">  
+                    <h4>Gigantes de México, Azcárraga y Slim.</h4>
+                </td>
+                <td style="padding: 15px;">
+                    <img class="galeria" src="./assets/Infografias/infografíaServitje.png" onclick="img(this.src)" id="gigantes" alt="" style="width: 250px; height: 250px;">  
+                    <h4>Claves para un negocio exitoso.</h4>
+                </td>
+                <td style="padding: 15px;">
+                    <img class="galeria" src="./assets/Infografias/gigantesZervitje.png" onclick="img(this.src)" id="gigantes" alt="" style="width: 250px; height: 250px;">  
+                    <h4>Gigantes de México, Lorenzo Zervitje.</h4>
+                </td>
+            </tr> 
+            <tr>
+                <td></td>
+                <td></td>
+                <td><a class="boton"  href="./dinamica.html">DINÁMICA</a></td>
+            </tr>         
+        </table>
+        
+        <script language="JavaScript">
+            function img(src){
+         imagen = '<img src='+ src + ' alt="cargando..." />'
+         console.log(imagen)
+         document.write('<body style="background-color: #deffff;">');
+         document.write(`<style>
+        @font-face { font-family: LatoLi; src: url('./assets/lemon_friday/Lato-Light.ttf'); }
+        ul {list-style-type: none; margin: 0; padding: 0; overflow: hidden; width: 1146px; height: 70px; display: inline-block; position:fixed; top: 0; padding-left: 27%; background-color: white;}
+        li {display: inline-block;}
+        li a {font-family: "LatoLi"; display: block; color: black; line-height: 37.5px; text-align: center; padding: 10px 10px; text-decoration: none;}
+        li a:hover { color: #000; border-bottom: 4px solid #000;}
+        .active { color: #000; border-bottom: 4px solid #000;}
+        </style>
+        <ul>
+            <li><a href="./index.html">MENÚ PRINCIPAL</a></li>
+            <li><a href="./informacion.html">INFORMACIÓN</a></li>
+            <li><a class="active" href="./galeria.html">GALERÍA</a></li>
+            <li><a href="./dinamica.html">DINÁMICA</a></li>
+            <li><a href="./cuestionario.html">TEST</a></li>
+            <li><a href="./sobremi.html">ACERCA DE MÍ</a></li>
+        </ul>`)
+
+        document.write("<div align=center>" + "<br><br><br><br>" + imagen + "</div>");
+        document.write('<style>.boton { background-color: rgba(255,255,255,0); border-radius: 10px; border: #000 3px solid; box-shadow: 0 0px 20px rgba(255,255,255,1), 0 0px 6px rgba(0,0,0,0.1); color: #000; font-size: 24px; padding: 10px 30px; font-family: "LatoLi"; text-decoration:none; } .boton:active { transform: scale(0.98); } .boton:focus { outline: 0; } .boton:hover{ background-color: #000; color: #fff; cursor: pointer; }</style>'+
+                '<br><br><div style="text-align: center; padding-bottom: 50px;">' +
+                '<a class="boton" style="vertical-align: 90%; " href="./galeria.html">REGRESAR A LA GALERÍA</a>' + 
+            '</div>')
+        document.write('</body>')
+            }
+        </script><br>
+        
+    </div> 
+</body>
